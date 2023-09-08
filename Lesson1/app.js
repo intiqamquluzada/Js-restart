@@ -49,20 +49,37 @@
 
 let fuel_type = prompt("1-Dizel : 0.8 AZN \n2-Benzin : 1.6 AZN \n3-Qaz : 0.6 AZN\nIstediyiniz yanacaq novunu qeyd edin:");
 let quantity = prompt("Miqdari yazin (litrle):");
+let balans = prompt("Balansiniz ne qederdir ?")
 
-
-let myfunc = function(fuel_type, quantity) {
+let myfunc = function(balance, fuel_type, quantity) {
     if (fuel_type == "1") {
-      return "Sizin mebleg: " + (Number(quantity) * 0.8) + "AZN";
+        mebleg = Number(quantity) * 0.8;
+        if (balance < mebleg){
+            return "Balansda mevacib azdir"
+        };
+       
+        balance-=mebleg;
+      return "Ugurlu odenis\nBalans: " + balance;
     } else if (fuel_type == "2") {
-      return "Sizin mebleg: " + (Number(quantity) * 1.6) + "AZN";
+        mebleg = Number(quantity) * 1.6;
+      if (balance < mebleg) {
+        return "Balansda mevacib azdir";
+      }
+      balance -= mebleg;
+      return "Ugurlu odenis\nBalans; " + balance;
     } else if (fuel_type == "3") {
-      return "Sizin mebleg: " + (Number(quantity) * 0.6) + "AZN";
+        mebleg = Number(quantity) * 0.6;
+        if (balance < mebleg) {
+          return "Balansda mevacib azdir";
+        }
+        balance -= mebleg;
+        return "Ugurlu odenis\nBalans; " + balance;
+  
     }
     else return "Yalnis secim";
 };
 
-alert(myfunc(fuel_type, quantity));
+alert(myfunc(balans,fuel_type, quantity));
 
 
 
