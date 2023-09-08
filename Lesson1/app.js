@@ -47,39 +47,104 @@
 
 
 
-let fuel_type = prompt("1-Dizel : 0.8 AZN \n2-Benzin : 1.6 AZN \n3-Qaz : 0.6 AZN\nIstediyiniz yanacaq novunu qeyd edin:");
-let quantity = prompt("Miqdari yazin (litrle):");
-let balans = prompt("Balansiniz ne qederdir ?")
+// let fuel_type = prompt("1-Dizel : 0.8 AZN \n2-Benzin : 1.6 AZN \n3-Qaz : 0.6 AZN\nIstediyiniz yanacaq novunu qeyd edin:");
+// let quantity = prompt("Miqdari yazin (litrle):");
+// let balans = prompt("Balansiniz ne qederdir ?")
 
-let myfunc = function(balance, fuel_type, quantity) {
-    if (fuel_type == "1") {
-        mebleg = Number(quantity) * 0.8;
-        if (balance < mebleg){
-            return "Balansda mevacib azdir"
-        };
+// let myfunc = function(balance, fuel_type, quantity) {
+//     if (fuel_type == "1") {
+//         mebleg = Number(quantity) * 0.8;
+//         if (balance < mebleg){
+//             return "Balansda mevacib azdir"
+//         };
        
-        balance-=mebleg;
-      return "Ugurlu odenis\nBalans: " + balance;
-    } else if (fuel_type == "2") {
-        mebleg = Number(quantity) * 1.6;
-      if (balance < mebleg) {
-        return "Balansda mevacib azdir";
-      }
-      balance -= mebleg;
-      return "Ugurlu odenis\nBalans; " + balance;
-    } else if (fuel_type == "3") {
-        mebleg = Number(quantity) * 0.6;
-        if (balance < mebleg) {
-          return "Balansda mevacib azdir";
-        }
-        balance -= mebleg;
-        return "Ugurlu odenis\nBalans; " + balance;
+//         balance-=mebleg;
+//       return "Ugurlu odenis\nBalans: " + balance;
+//     } else if (fuel_type == "2") {
+//         mebleg = Number(quantity) * 1.6;
+//       if (balance < mebleg) {
+//         return "Balansda mevacib azdir";
+//       }
+//       balance -= mebleg;
+//       return "Ugurlu odenis\nBalans; " + balance;
+//     } else if (fuel_type == "3") {
+//         mebleg = Number(quantity) * 0.6;
+//         if (balance < mebleg) {
+//           return "Balansda mevacib azdir";
+//         }
+//         balance -= mebleg;
+//         return "Ugurlu odenis\nBalans; " + balance;
   
-    }
-    else return "Yalnis secim";
-};
+//     }
+//     else return "Yalnis secim";
+// };
 
-alert(myfunc(balans,fuel_type, quantity));
+// alert(myfunc(balans,fuel_type, quantity));
+
+// let eded = prompt("Ededi daxil edin: 1-5 arasinda ");
+
+
+// switch (eded) {
+//   case "1":
+//     console.log("Eded 1-dir");
+//     break;
+//   case "2":
+//     console.log("Eded 2-dir");
+//     break;
+//   case "3":
+//     console.log("Eded 3-dir");
+//     break;
+//   case "4":
+//     console.log("Eded 4-dir");
+//     break;
+//   case "5":
+//     console.log("Eded 5-dir");
+//     break;
+//     default:
+//         console.log("eded 1-5 arasinda deyil");
+//         break;
+
+// }
+
+
+
+let balance = 1000;
+
+let text = "1-Balansi gostermek\n2-Pul cekmek\n3-Pul yatirmaq\n4-Cixis\nSeciminizi edin:";
+
+let operation = prompt(text);
+
+
+switch(operation){
+    case "1":
+        console.log(balance);
+        break;
+    case "2":
+        outcome = Number(prompt("cixarmaq istediyiniz meblegi daxil edin: "));
+        if (outcome < balance){
+            balance -= outcome;
+            console.log("Pulu cekdiniz, Balans: " + balance);
+        }
+        else console.log("Balansda kifayet qeder pul yoxdur");
+        break;
+    case "3":
+        income = Number(prompt("Medaxil etmek istediyiniz meblegi daxil edin"));
+        balance += income
+        console.log("Balansiniz artirildi, balans: ", balance);
+        break;
+    
+    case "4":
+        break;
+    default:
+        console.log("Yalnis secim");
+        break;
+}
+    
+
+
+
+
+
 
 
 
