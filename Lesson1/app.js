@@ -114,6 +114,7 @@ let text = "1-Balansi gostermek\n2-Pul cekmek\n3-Pul yatirmaq\n4-Cixis\nSecimini
 
 let operation = prompt(text);
 
+let salam = 'salam'
 
 switch(operation){
     case "1":
