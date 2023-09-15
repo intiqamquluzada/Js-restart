@@ -133,7 +133,6 @@ switch(operation){
         balance += income
         console.log("Balansiniz artirildi, balans: ", balance);
         break;
-    
     case "4":
         break;
     default:
