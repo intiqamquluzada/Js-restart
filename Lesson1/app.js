@@ -144,22 +144,43 @@
 //Decimal to binary program
 // 10 5 2 1
 
-decimalToBinary(58);
+// decimalToBinary(58);
 
-function decimalToBinary(number){
-    let binary = "";
-    while(true){
-        binary += (number%2).toString();
-        number = Math.floor(number / 2);
-        if(number == 1){
-            break;
-        }
-    }
-    console.log(binary);
-}
+// function decimalToBinary(number){
+//     let binary = "";
+//     while(true){
+//         binary += (number%2).toString();
+//         number = Math.floor(number / 2);
+//         if(number == 1){
+//             break;
+//         }
+//     }
+//     console.log(binary);
+// }
 
 
+// Binary to decimal
 
+// let binary = "010"
+
+
+// function binaryToDecimal(binary){
+
+//     let toplam = 0;
+//     let pow = 0;
+
+//     for(i = binary.length-1; i>=0; i--){
+
+//         toplam += Number(binary.charAt(i)) * Math.pow(2, pow);
+//         pow++;
+
+//     }
+//     console.log(toplam)
+
+
+// }
+
+// binaryToDecimal(binary);
 
 
 
