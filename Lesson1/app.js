@@ -108,39 +108,55 @@
 
 
 
-let balance = 1000;
+// let balance = 1000;
 
-let text = "1-Balansi gostermek\n2-Pul cekmek\n3-Pul yatirmaq\n4-Cixis\nSeciminizi edin:";
+// let text = "1-Balansi gostermek\n2-Pul cekmek\n3-Pul yatirmaq\n4-Cixis\nSeciminizi edin:";
 
-let operation = prompt(text);
+// let operation = prompt(text);
 
-let salam = 'salam'
+// let salam = 'salam'
 
-switch(operation){
-    case "1":
-        console.log(balance);
-        break;
-    case "2":
-        outcome = Number(prompt("cixarmaq istediyiniz meblegi daxil edin: "));
-        if (outcome < balance){
-            balance -= outcome;
-            console.log("Pulu cekdiniz, Balans: " + balance);
-        }
-        else console.log("Balansda kifayet qeder pul yoxdur");
-        break;
-    case "3":
-        income = Number(prompt("Medaxil etmek istediyiniz meblegi daxil edin"));
-        balance += income
-        console.log("Balansiniz artirildi, balans: ", balance);
-        break;
-    case "4":
-        break;
-    default:
-        console.log("Yalnis secim");
-        break;
-}
+// switch(operation){
+//     case "1":
+//         console.log(balance);
+//         break;
+//     case "2":
+//         outcome = Number(prompt("cixarmaq istediyiniz meblegi daxil edin: "));
+//         if (outcome < balance){
+//             balance -= outcome;
+//             console.log("Pulu cekdiniz, Balans: " + balance);
+//         }
+//         else console.log("Balansda kifayet qeder pul yoxdur");
+//         break;
+//     case "3":
+//         income = Number(prompt("Medaxil etmek istediyiniz meblegi daxil edin"));
+//         balance += income
+//         console.log("Balansiniz artirildi, balans: ", balance);
+//         break;
+//     case "4":
+//         break;
+//     default:
+//         console.log("Yalnis secim");
+//         break;
+// }
     
 
+//Decimal to binary program
+// 10 5 2 1
+
+decimalToBinary(58);
+
+function decimalToBinary(number){
+    let binary = "";
+    while(true){
+        binary += (number%2).toString();
+        number = Math.floor(number / 2);
+        if(number == 1){
+            break;
+        }
+    }
+    console.log(binary);
+}
 
 
 
