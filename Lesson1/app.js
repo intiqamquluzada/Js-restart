@@ -184,12 +184,51 @@
 
 
 
+// sum of number's elements
+
+// 123
+
+// function sumElements(number){
+//     mySum = 0;
+//     number = String(number);
+//     for(i=0; i<number.length; i++){
+
+//         mySum += Number(number[i]);
+
+//     }
+//     return mySum
+// }
+
+
+// console.log(sumElements(123));
+
+
+// Count of each alpha in word
+
+
+// function counterAlpha(word){
+//     let myList = [];
+//     for(i=0;i<word.length;i++){
+//         myList.append(word[i],word[i].count);
+//     }
+//     return myList
+// }
+
+// console.log(counterAlpha('salam'));
 
 
 
+let numbers = [1,2,3,4,5,6,7,8,9]
+
+// console.log(numbers[3])
+
+// numbers[9] = 'Salam'
+// console.log(numbers[numbers.length])
 
 
-
+// numbers.forEach(function(num){
+//     console.log(num);
+// });
 
 
 
