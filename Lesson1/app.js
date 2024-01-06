@@ -141,6 +141,8 @@
 // }
     
 
+
+
 //Decimal to binary program
 // 10 5 2 1
 
@@ -218,7 +220,7 @@
 
 
 
-let numbers = [1,2,3,4,5,6,7,8,9]
+// let numbers = [1,2,3,4,5,6,7,8,9]
 
 // console.log(numbers[3])
 
@@ -229,6 +231,24 @@ let numbers = [1,2,3,4,5,6,7,8,9]
 // numbers.forEach(function(num){
 //     console.log(num);
 // });
+
+
+
+let cars = ['BMW', 'Mercedes', 'Toyota', 'LADA', 'Changan'];
+
+
+// PUSH method
+// let a = cars.push("Opel");
+// console.log(a, 'bosluq',cars);
+
+// UNSHIFT method
+// cars.unshift("Hyundai"); // elave edir
+// console.log(cars);
+
+// cars.push("salam")
+// cars.shift()
+// console.log(cars)
+
 
 
 
